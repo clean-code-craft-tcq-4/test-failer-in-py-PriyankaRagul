@@ -1,4 +1,3 @@
-
 def size(cms):
     if cms < 38:
         return 'S'
