@@ -12,10 +12,8 @@ def size(cms):
 assert(size(37) == 'S')
 assert(size(38) == 'S')
 assert(size(5) == None)  # testcase for invalid scenario
-assert(size(38) == 'L')
 assert(size(40) == 'M')
 assert(size(42) == 'M')
-assert(size(42) == 'L')
 assert(size(43) == 'L')
 assert(size(55) == None) #testcase for invalid scenario
 assert(size(-5) == None) #testcase for invalid scenario
