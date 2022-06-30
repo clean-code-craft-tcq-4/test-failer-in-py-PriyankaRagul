@@ -33,6 +33,7 @@ jobs:
       #run: bash .github/workflows/expectfail.sh python tshirts.py
     
     - name: misaligned fail
+      run: python misaligned.py
       #run: bash .github/workflows/expectfail.sh python misaligned.py
 
     - name: alerter fail
