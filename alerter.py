@@ -3,7 +3,7 @@ alert_failure_count = 0
 Threshold_Temp = 200
 
 def network_alert(celcius):
-	print(f'Production code is executing..')
+    print(f'Production code is executing..')
     print(f'ALERT: Temperature is {celcius} celcius')
     if(celcius<=Threshold_Temp):    
       returnCode = 200     # Return 200 for ok
