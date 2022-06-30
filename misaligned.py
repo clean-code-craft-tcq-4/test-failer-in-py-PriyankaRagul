@@ -4,9 +4,11 @@ def print_color_map():
     minor_colors = ["Blue", "Orange", "Green", "Brown", "Slate"]
     for i, major in enumerate(major_colors):
         for j, minor in enumerate(minor_colors):
-            print(f'{i * 5 + j} | {major} | {minor}')
+            lengthOfColors=len(minor_colors)
+            pairNumber=i * lengthOfColors + j+1
+            print(f'{pairNumber:<3} | {major:<7} | {minor}')
             # returning last pairnumber to check if it's 25
-    return len(major_colors) * len(minor_colors),i * 5 + j
+    return len(major_colors) * len(minor_colors),pairNumber
 
 result,last_pair_number = print_color_map()
 assert(result == 25)
